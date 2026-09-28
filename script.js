@@ -33,6 +33,22 @@ document.querySelectorAll('#navMenu a').forEach(a => {
   });
 });
 
+// See more projects — swap label + icon as the section opens and closes
+const moreProjects = document.getElementById('moreProjects');
+const moreBtn = document.getElementById('moreProjectsBtn');
+if (moreProjects && moreBtn) {
+  const moreLabel = document.getElementById('moreProjectsLabel');
+  const moreIcon = moreBtn.querySelector('i');
+  moreProjects.addEventListener('show.bs.collapse', () => {
+    moreLabel.textContent = 'Hide projects';
+    moreIcon.className = 'bi bi-dash-lg me-1';
+  });
+  moreProjects.addEventListener('hidden.bs.collapse', () => {
+    moreLabel.textContent = 'See more projects';
+    moreIcon.className = 'bi bi-plus-lg me-1';
+  });
+}
+
 // Scroll reveal with fail-safe (never leave sections hidden)
 const revealEls = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {

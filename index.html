@@ -187,6 +187,35 @@
           </article>
         </div>
       </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-accent" type="button" id="moreProjectsBtn" data-bs-toggle="collapse" data-bs-target="#moreProjects" aria-expanded="false" aria-controls="moreProjects">
+          <i class="bi bi-plus-lg me-1"></i><span id="moreProjectsLabel">See more projects</span>
+        </button>
+      </div>
+      <div class="collapse" id="moreProjects">
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6">
+            <article class="card-dark project h-100">
+              <img src="weather.PNG" class="img-fluid project-img" alt="Weather app showing current conditions and an hourly timeline for Ongata Rongai, Kenya" loading="lazy" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between align-items-center mb-2"><span class="badge-accent">Weather · React</span><span class="text-muted small">Vercel · Live</span></div>
+                <h4>Weather</h4>
+                <p class="text-muted">React + Vite weather app showing current conditions and a rolling 24-hour hourly timeline. Search any city, with reverse-geocoded place names, timezone-aware hours and metric units.</p>
+                <ul class="feat">
+                  <li>Current: temperature, feels-like, wind, rain chance, humidity, cloud cover</li>
+                  <li>Past 24 hours &amp; next 24 hours hourly strip</li>
+                  <li>City search · reverse geocoding · local timezone</li>
+                </ul>
+                <div class="tags mb-3"><span>React</span><span>Vite</span><span>Visual Crossing API</span><span>JavaScript</span></div>
+                <div class="d-flex gap-2">
+                  <a class="btn btn-accent btn-sm" href="https://github.com/skanyingi/weather" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a>
+                  <a class="btn btn-outline-light btn-sm" href="https://weather-five-green-19.vercel.app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
       <p class="text-center text-muted mt-4">More on GitHub: <a href="https://github.com/skanyingi" target="_blank" rel="noopener" class="link-accent">github.com/skanyingi</a></p>
     </div>
   </section>
