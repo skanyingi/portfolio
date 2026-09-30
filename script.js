@@ -49,6 +49,18 @@ if (moreProjects && moreBtn) {
   });
 }
 
+// Watch demo — scroll the inline video into view and start it
+document.querySelectorAll('[data-watch]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const v = document.getElementById(btn.dataset.watch);
+    if (!v) return;
+    v.scrollIntoView({ block: 'center' });
+    v.focus();
+    const playing = v.play();
+    if (playing && playing.catch) playing.catch(() => {});
+  });
+});
+
 // Scroll reveal with fail-safe (never leave sections hidden)
 const revealEls = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {

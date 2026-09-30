@@ -81,10 +81,10 @@ body {
 .project-img-sm { border-radius: 12px; border: 1px solid var(--border); max-height: 220px; width: 100%; object-fit: cover; object-position: top; }
 .feat { color: #cbd5e1; padding-left: 1.1rem; } .feat li { margin-bottom: .25rem; }
 
-/* PROJECTS — portrait / video media (mobile apps) */
-.media-phone { display: flex; align-items: center; justify-content: center; background: #0b1226; border-right: 1px solid var(--border); padding: .75rem; }
-.media-phone video { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 12px; background: #05070e; display: block; }
-@media (max-width: 991.98px) { .media-phone { border-right: none; border-bottom: 1px solid var(--border); } }
+/* PROJECTS — video / portrait media */
+.media-demo { display: flex; align-items: center; justify-content: center; background: #0b1226; border-right: 1px solid var(--border); padding: .75rem; }
+.media-demo video { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 12px; background: #05070e; display: block; }
+@media (max-width: 991.98px) { .media-demo { border-right: none; border-bottom: 1px solid var(--border); } }
 
 /* JOURNEY */
 .timeline, .roadmap { list-style: none; padding: 0; margin: 0; display: grid; gap: .9rem; }
