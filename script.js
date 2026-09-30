@@ -49,6 +49,13 @@ if (moreProjects && moreBtn) {
   });
 }
 
+// Demo modal — stop playback on close so audio never runs behind the page
+document.querySelectorAll('.modal').forEach(m => {
+  m.addEventListener('hidden.bs.modal', () => {
+    m.querySelectorAll('video').forEach(v => { v.pause(); v.currentTime = 0; });
+  });
+});
+
 // Watch demo — scroll the inline video into view and start it
 document.querySelectorAll('[data-watch]').forEach(btn => {
   btn.addEventListener('click', () => {

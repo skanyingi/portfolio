@@ -78,13 +78,20 @@ body {
 /* PROJECTS */
 .badge-accent { background: rgba(56,189,248,.15); color: var(--accent); border-radius: 999px; padding: .3rem .8rem; font-size: .78rem; font-weight: 600; }
 .project-img { border-radius: 18px 18px 0 0; height: 240px; width: 100%; object-fit: cover; object-position: top; border-bottom: 1px solid var(--border); }
-.project-img-sm { border-radius: 12px; border: 1px solid var(--border); max-height: 220px; width: 100%; object-fit: cover; object-position: top; }
 .feat { color: #cbd5e1; padding-left: 1.1rem; } .feat li { margin-bottom: .25rem; }
 
 /* PROJECTS — video / portrait media */
 .media-demo { display: flex; align-items: center; justify-content: center; background: #0b1226; border-right: 1px solid var(--border); padding: .75rem; }
 .media-demo video { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 12px; background: #05070e; display: block; }
 @media (max-width: 991.98px) { .media-demo { border-right: none; border-bottom: 1px solid var(--border); } }
+
+/* DEMO MODAL */
+.demo-modal { background: #0b1226; border: 1px solid var(--border); }
+.demo-modal .modal-header { border-color: var(--border); }
+.demo-modal .modal-title { color: var(--text); font-weight: 700; }
+.demo-modal .modal-body { padding: .75rem; }
+.demo-modal video { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; border-radius: 12px; background: #05070e; display: block; }
+@media (max-width: 575.98px) { .demo-modal .modal-title { font-size: 1.05rem; } .demo-modal .modal-body { padding: .5rem; } }
 
 /* JOURNEY */
 .timeline, .roadmap { list-style: none; padding: 0; margin: 0; display: grid; gap: .9rem; }

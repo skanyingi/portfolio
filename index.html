@@ -166,7 +166,6 @@
               <h4>Schemes of Work — EduScheme</h4>
               <p class="text-muted">Web app for CBC teachers to prepare lesson plans at the beginning of term. Generate inspection-ready schemes, manage library, wallet balance, M-Pesa STK integration.</p>
               <ul class="feat"><li>Dashboard: 242 schemes · 7,456 lessons tracked</li><li>Wallet + M-Pesa STK payments</li><li>CBC-aligned generation & downloads</li></ul>
-              <img src="schemes_2.PNG" class="img-fluid project-img-sm mb-3" alt="EduScheme second screenshot" loading="lazy" />
               <div class="tags mb-3"><span>Django</span><span>PostgreSQL</span><span>M-Pesa API</span><span>Bootstrap</span></div>
               <div class="d-flex gap-2"><a class="btn btn-accent btn-sm" href="https://github.com/skanyingi/sl2026" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a><a class="btn btn-outline-light btn-sm" href="https://sl2026.onrender.com" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a></div>
             </div>
@@ -180,9 +179,8 @@
               <h4>FashionHub</h4>
               <p class="text-muted">Django e-commerce platform with PostgreSQL, guest cart + authentication, filters, and M-Pesa STK checkout. Complete B2C flow deployed on Render.</p>
               <ul class="feat"><li>Guest cart + auth, categories & price filters</li><li>PostgreSQL product catalog</li><li>M-Pesa STK integration</li></ul>
-              <img src="fashionhub_2.PNG" class="img-fluid project-img-sm mb-3" alt="FashionHub second screenshot" loading="lazy" />
               <div class="tags mb-3"><span>Django</span><span>PostgreSQL</span><span>JavaScript</span><span>M-Pesa STK</span></div>
-              <div class="d-flex gap-2"><a class="btn btn-accent btn-sm" href="https://github.com/skanyingi/fashionhub" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a><a class="btn btn-outline-light btn-sm" href="https://fashionhubecommerce.onrender.com" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i> Live Demo</a></div>
+              <div class="d-flex gap-2"><a class="btn btn-accent btn-sm" href="https://github.com/skanyingi/fashionhub" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> Code</a><button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#fhDemoModal"><i class="bi bi-play-fill me-1"></i> Watch Demo</button></div>
             </div>
           </article>
         </div>
@@ -362,6 +360,24 @@
       </span>
     </div>
   </footer>
+
+  <!-- FASHIONHUB DEMO MODAL -->
+  <div class="modal fade" id="fhDemoModal" tabindex="-1" aria-labelledby="fhDemoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content demo-modal">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fhDemoLabel">FashionHub — 2:37 walkthrough</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video id="fhDemo" controls preload="none" playsinline poster="fashionhub_1.PNG" aria-label="FashionHub demo video — browsing, cart and M-Pesa checkout">
+            <source src="fashionhub.mp4" type="video/mp4" />
+            Your browser cannot play embedded video.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
